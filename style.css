@@ -1,0 +1,98 @@
+html,body{
+  margin:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:#0e1114;
+  font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;
+  touch-action:none;
+  -webkit-user-select:none;
+  user-select:none;
+}
+#game{
+  width:100vw;
+  height:100vh;
+  display:block;
+  background:#182126;
+}
+#touch-ui{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+}
+#stick-zone{
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:44vw;
+  height:48vh;
+  pointer-events:auto;
+}
+#stick-base{
+  position:absolute;
+  left:32px;
+  bottom:38px;
+  width:118px;
+  height:118px;
+  border-radius:50%;
+  background:rgba(255,255,255,.12);
+  border:2px solid rgba(255,255,255,.18);
+}
+#stick{
+  position:absolute;
+  left:34px;
+  top:34px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:rgba(255,255,255,.55);
+}
+#buttons{
+  position:absolute;
+  right:16px;
+  bottom:28px;
+  display:grid;
+  grid-template-columns:82px 82px;
+  gap:10px;
+  pointer-events:auto;
+}
+#buttons button,#start button{
+  border:0;
+  border-radius:18px;
+  padding:15px 8px;
+  color:white;
+  background:rgba(255,255,255,.18);
+  backdrop-filter:blur(8px);
+  font-weight:800;
+  font-size:12px;
+}
+#btn-action{background:rgba(255,90,90,.45)!important}
+#btn-enter{background:rgba(80,160,255,.45)!important}
+#btn-mission{background:rgba(255,210,70,.45)!important}
+#btn-reset{background:rgba(180,180,180,.28)!important}
+#start{
+  position:fixed;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  color:white;
+  text-align:center;
+  background:linear-gradient(145deg,#15191f,#1d3b44);
+  z-index:5;
+  padding:24px;
+}
+#start h1{font-size:42px;margin:0}
+#start p{opacity:.85;margin:0}
+#start small{opacity:.65;max-width:280px;line-height:1.35}
+#start button{
+  font-size:18px;
+  padding:16px 34px;
+  background:#ff3b60;
+}
+@media (orientation:portrait){
+  #buttons{grid-template-columns:86px;right:14px;bottom:24px}
+  #stick-base{left:24px;bottom:42px}
+}

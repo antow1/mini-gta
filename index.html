@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#111111" />
+  <title>Mini Vice Mobile</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="touch-ui">
+    <div id="stick-zone">
+      <div id="stick-base"><div id="stick"></div></div>
+    </div>
+
+    <div id="buttons">
+      <button id="btn-action">ACTION</button>
+      <button id="btn-enter">VOITURE</button>
+      <button id="btn-mission">MISSION</button>
+      <button id="btn-reset">RESET</button>
+    </div>
+  </div>
+
+  <div id="start">
+    <h1>Mini Vice Mobile</h1>
+    <p>Un mini GTA-like 2D adapté iPhone.</p>
+    <button id="startBtn">Jouer</button>
+    <small>Astuce : dans Safari, partage → Ajouter à l’écran d’accueil.</small>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
